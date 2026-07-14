@@ -177,6 +177,23 @@ p {
   transform: translateY(-2px);
 }
 
+/* Download Badge (App Store) */
+.download-badge {
+  display: inline-block;
+  transition: transform 0.15s ease;
+  vertical-align: middle;
+}
+
+.download-badge:hover {
+  transform: translateY(-2px);
+}
+
+.download-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 /* Apple icon inside buttons */
 .btn svg {
   width: 20px;
