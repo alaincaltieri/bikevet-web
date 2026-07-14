@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &amp; FAQ – BikeVet</title>
+  <meta name="description" content="Get help with BikeVet. Browse frequently asked questions or contact our support team directly.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">BikeVet</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="support.html" class="active">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SUPPORT HERO / COVER IMAGE ========== -->
+    <section class="support-hero" id="support-hero">
+      <div class="placeholder-img" aria-label="Support page cover image">
+        Cover Image — Full Width × 300
+      </div>
+    </section>
+
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <ul class="accordion" role="list">
+
+          <!-- Q1 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+              <span>How does the Digital Twin work?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+              <p>
+                When you add a bicycle to BikeVet, the app creates a virtual replica — a digital twin — of your real bike. Every component you register (frame, wheels, drivetrain, brakes, etc.) is tracked independently. As you log rides and maintenance, the twin updates in real time so you always know the exact state of your bike.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q2 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+              <span>Is BikeVet free to use?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+              <p>
+                BikeVet offers a generous free tier that lets you manage one bicycle with all core features. For riders with multiple bikes or who want advanced analytics and priority support, we offer an optional Pro subscription available as a monthly or yearly plan.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q3 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+              <span>Can I export my data?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+              <p>
+                Absolutely. You can export your full bike profile, component history, and service logs as a structured file at any time from the Settings screen. Your data is yours — we believe in full portability and transparency.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q4 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+              <span>Which platforms does BikeVet support?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+              <p>
+                BikeVet is currently available on iOS (iPhone and iPad). We're actively exploring an Android version and a companion web dashboard — stay tuned by following us for updates.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section section--alt" id="contact">
+      <div class="container">
+        <h2>Need more help?</h2>
+        <a href="mailto:support@bikevet.app" class="btn btn--primary" id="cta-email-support">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Send an Email
+        </a>
+        <p class="contact__note">We typically reply within 24-48 hours.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="support.html">Support &amp; FAQ</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <span class="footer-copy">&copy; 2026 BikeVet</span>
+    </div>
+  </footer>
+
+  <script src="js/accordion.js"></script>
+</body>
+</html>

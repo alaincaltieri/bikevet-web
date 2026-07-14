@@ -1,0 +1,43 @@
+Privacy Policy for BikeVet
+
+Last Updated: July 13, 2026
+
+This Privacy Policy describes how your personal information is collected, used, and disclosed when you use the mobile application BikeVet (the "App"). The App is designed to help users manage bicycle maintenance through digital logs and alerts.
+
+1. Data Controller & Contact Information
+The Data Controller responsible for your personal data under the General Data Protection Regulation (GDPR) is:
+- Developer: Alain Caltieri
+- Official Contact Email: help.chapps@gmail.com
+
+2. Data Collection and Purposes
+We only collect data that is strictly necessary to provide the core functionalities of the App. The data collected and its respective purposes are detailed below:
+- Account Email Address: Collected only if you choose to register an account. This email is used exclusively for secure user authentication, multi-device synchronization, and data backup.
+- Technical Bicycle Data: Information regarding your bicycle specs and components entered manually by you to manage maintenance logs and generate precision alerts.
+- Ride Metrics: Distance, elevation gain, and the starting location of your bicycle rides to calculate component wear and trigger timely maintenance reminders.
+- Strava Account Data: If you choose to connect your Strava account, we collect your first and last name as configured on Strava to personalize your profile and process imported ride data.
+
+3. iOS System Permissions
+To deliver specific features, the App requires explicit access to certain iOS hardware components. These permissions are requested only when needed:
+- Camera and Photo Library: This permission is used solely to capture or select images of your bicycle parts to analyze components and attach visual references to your maintenance logs. No photos are processed or stored outside the scope of your explicit app usage.
+
+4. Third-Party Services and SDKs
+We integrate specific third-party Service Development Kits (SDKs) to guarantee data persistence, synchronization, and essential communication. These processors operate under strict confidentiality agreements:
+- Supabase: Utilized for secure cloud database management, data synchronization across devices, automated backups, and user login infrastructure.
+- RevenueCat: Utilized to securely process and manage in-app purchases. RevenueCat collects anonymized user IDs and transaction/purchase history to unlock premium features.
+- OneSignal: Utilized to transmit and manage transactional push notifications related to your bicycle maintenance schedules and alerts.
+Strict Privacy Commitment: BikeVet does not integrate any behavioral analytics tools, tracking pixels, or advertising SDKs. We do not use Firebase Analytics, AdMob, or Meta Pixel, ensuring your behavior remains entirely private.
+
+5. Account Management and Data Deletion
+In full compliance with Apple App Store Review Guidelines, we grant you absolute control over your account and data:
+- Anonymous Use: You can utilize the App via an anonymous account without disclosing your email address.
+- Instant Deletion: You can instantly and permanently delete your account along with all associated data directly from the settings section within the App. This action purges all records from our database immediately.
+- Strava Disconnection: You can disconnect your Strava account at any time via the App settings. Upon disconnection, all imported Strava data is instantly erased from our systems.
+
+6. Your GDPR Rights
+As a user residing in the European Economic Area (EEA), you possess the following fundamental rights under the GDPR regarding your personal data:
+- Right of Access & Portability: The right to request copies of your personal data in a structured, commonly used format.
+- Right to Rectification: The right to request the correction of any inaccurate or incomplete information.
+- Right to Erasure ("Right to be Forgotten"): The right to demand the deletion of your personal data, which you can also execute autonomously within the App settings.
+- Right to Restrict or Object to Processing: The right to limit how we process your data under specific statutory conditions.
+
+To exercise any of these rights, or if you have questions regarding this Privacy Policy, please contact us directly at help.chapps@gmail.com.

@@ -1,9 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BikeVet App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikeVet – Your Bicycle's Digital Twin</title>
+  <meta name="description" content="BikeVet helps you keep your bicycle in perfect shape with a digital twin that tracks every component, service interval, and ride.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello World - BikeVet</h1>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">BikeVet</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__headline">A digital twin<br>for every bicycle you own.</h1>
+          <p class="hero__subheadline">
+            Track components, predict maintenance, and extend the life of your ride — all from one beautifully simple app.
+          </p>
+          <a href="#" class="btn btn--primary" id="cta-hero-download">
+            <!-- Apple logo SVG (inline for performance) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-62.1 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Download on the App Store
+          </a>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="placeholder-img hero__image" aria-label="Digital Twin screenshot">
+            Digital Twin Preview — 800 × 500
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features section section--alt" id="features">
+      <div class="container">
+
+        <!-- Feature 1 -->
+        <div class="feature-block">
+          <div class="feature__text">
+            <h3>Build your bike, part by part.</h3>
+            <p>
+              Add every component — from the chain to the brake pads — and BikeVet builds a living digital replica. Know exactly what's on your bike at all times.
+            </p>
+          </div>
+          <div class="feature__visual">
+            <div class="placeholder-img" aria-label="App screenshot showing component list">
+              App Screenshot — 280 × 498
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 (reversed) -->
+        <div class="feature-block feature-block--reversed">
+          <div class="feature__text">
+            <h3>Smart maintenance alerts.</h3>
+            <p>
+              BikeVet tracks ride distance and time to predict when each component needs attention. Get notified before something breaks — not after.
+            </p>
+          </div>
+          <div class="feature__visual">
+            <div class="placeholder-img" aria-label="App screenshot showing maintenance alerts">
+              App Screenshot — 280 × 498
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-block">
+          <div class="feature__text">
+            <h3>Full service history at a glance.</h3>
+            <p>
+              Every swap, adjustment, and tune-up is logged automatically. Share your bike's service record with mechanics or buyers in a single tap.
+            </p>
+          </div>
+          <div class="feature__visual">
+            <div class="placeholder-img" aria-label="App screenshot showing service history">
+              App Screenshot — 280 × 498
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========== PRESS KIT ========== -->
+    <section class="press-kit section" id="press-kit">
+      <div class="container">
+        <div class="press-kit__inner">
+          <h2>Press &amp; Media</h2>
+          <p>
+            BikeVet's mission is to make bicycle maintenance accessible, predictable, and even enjoyable. If you'd like to feature us, download our media kit below.
+          </p>
+          <a href="#" class="btn btn--outline" id="cta-media-kit" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Media Kit (.zip)
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== BOTTOM CTA ========== -->
+    <section class="bottom-cta section section--alt" id="download">
+      <div class="container">
+        <h2>Ready to ride smarter?</h2>
+        <p>Download BikeVet and give your bicycle the care it deserves.</p>
+        <a href="#" class="btn btn--primary" id="cta-bottom-download">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-62.1 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          Download on the App Store
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="support.html">Support &amp; FAQ</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <span class="footer-copy">&copy; 2026 BikeVet</span>
+    </div>
+  </footer>
+
 </body>
 </html>

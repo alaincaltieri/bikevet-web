@@ -1,0 +1,48 @@
+TERMS OF SERVICE
+
+Last Updated: July 13, 2026
+
+These Terms of Service ("Terms") govern your use of the BikeVet mobile application ("App"), provided by A. Caltieri Apps di Alain Caltieri ("Developer", "we", "us", or "our"). By downloading, accessing, or using the App, you agree to be bound by these Terms.
+
+1. AGREEMENT TO TERMS AND APPLE EULA
+By using BikeVet, you acknowledge and agree that these Terms are concluded between you and the Developer only, not with Apple Inc. ("Apple"). However, you explicitly agree to be bound by Apple’s standard Licensed Application End User License Agreement ("Standard EULA") incorporated herein by reference. The Developer, not Apple, is solely responsible for the App and its content.
+
+2. APP FUNCTIONALITY AND ELIGIBILITY
+
+Purpose: BikeVet is a tool designed for bicycle maintenance management and tracking.
+
+Age Requirements: There are no age restrictions for using this App.
+
+3. USER-GENERATED CONTENT
+The App allows you to input and track data regarding your bicycle(s). The App does not feature any functionality to share this user-generated content publicly. All data remains private to your account.
+
+4. SUBSCRIPTIONS AND PURCHASES
+BikeVet offers auto-renewable subscriptions to access premium features. The following terms apply to all App Store subscriptions:
+
+Payment: Payment will be charged to your Apple ID account at the confirmation of purchase.
+
+Auto-Renewal: Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current billing period.
+
+Charges: Your account will be charged for renewal within 24 hours prior to the end of the current period.
+
+Management & Cancellation: You can manage and cancel your subscriptions by going to your Apple ID Account Settings after purchase. Canceling a subscription will stop the subsequent auto-renewal, but no refunds will be provided for the active billing period.  
+
+5. DISCLAIMER OF WARRANTIES
+The App is provided on an "AS-IS" and "AS-AVAILABLE" basis. The Developer expressly disclaims all warranties, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.  
+
+Data Accuracy: BikeVet provides estimates for bicycle maintenance intervals and part lifespans. This data is entirely estimated, may be inaccurate, and should not replace professional mechanical inspection.
+
+6. LIMITATION OF LIABILITY
+To the maximum extent permitted by applicable law, in no event shall the Developer be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of your use of the App.
+
+Physical Damage and Injury: The Developer is strictly not responsible for any physical damage to your bicycle, property damage, bodily injury, or death resulting from the use of, or reliance upon, the App's maintenance estimates and tracking features. You assume full responsibility for the safety and proper mechanical condition of your bicycle.
+
+7. GOVERNING LAW AND JURISDICTION
+These Terms shall be governed by and construed in accordance with the laws of Italy, without regard to its conflict of law provisions. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Italy.
+
+8. CONTACT INFORMATION
+For any questions, support requests, or claims related to the App, please contact:
+
+Developer: A. Caltieri Apps di Alain Caltieri
+
+Email: help.chapps@gmail.com
