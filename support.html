@@ -43,13 +43,13 @@
       <div class="container">
         <h1>Frequently Asked Questions</h1>
 
-        <h2 class="faq-section-title">General Questions</h2>
+        <h2 class="faq-section-title">Setup & Identification</h2>
         <ul class="accordion" role="list" style="margin-bottom: var(--space-2xl);">
 
           <!-- Q1 -->
           <li class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
-              <span>How does the Digital Twin work?</span>
+              <span>Does the AI photo identification work if the bike is very dirty or has custom components?</span>
               <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true">
@@ -59,10 +59,7 @@
             </button>
             <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
               <p>
-                When you add a bicycle to BikeVet, the app creates a virtual replica — a digital twin — of your real
-                bike. Every component you register (frame, wheels, drivetrain, brakes, etc.) is tracked independently.
-                As you log rides and maintenance, the twin updates in real time so you always know the exact state of
-                your bike.
+                The identification process is robust but can make mistakes. For the best accuracy, provide a clear, well-lit profile photo of the drive-side (gears side) against a neutral background, removing excessive accessories. You can also upload additional photos.
               </p>
             </div>
           </li>
@@ -70,7 +67,7 @@
           <!-- Q2 -->
           <li class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
-              <span>Is BikeVet free to use?</span>
+              <span>What if the app misidentifies a part? Can I manually correct the brand and model?</span>
               <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true">
@@ -80,22 +77,20 @@
             </button>
             <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
               <p>
-                BikeVet offers a generous free tier that lets you manage one bicycle with all core features. For riders
-                with multiple bikes or who want advanced analytics and priority support, we offer an optional Pro
-                subscription available as a monthly or yearly plan.
+                Yes. After the automatic identification, you can edit both the general bike details (type, year, model) and any single component. You can also manually input the initial wear and cleanliness levels if the app could not assess them precisely.
               </p>
             </div>
           </li>
 
         </ul>
 
-        <h2 class="faq-section-title">Features & Data</h2>
-        <ul class="accordion" role="list">
+        <h2 class="faq-section-title">Strava Synchronization</h2>
+        <ul class="accordion" role="list" style="margin-bottom: var(--space-2xl);">
 
           <!-- Q3 -->
           <li class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
-              <span>Can I export my data?</span>
+              <span>Does BikeVet import my entire Strava history or only track wear from new rides?</span>
               <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true">
@@ -105,9 +100,7 @@
             </button>
             <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
               <p>
-                Absolutely. You can export your full bike profile, component history, and service logs as a structured
-                file at any time from the Settings screen. Your data is yours — we believe in full portability and
-                transparency.
+                By default, the app imports only new activities. However, if you want to track wear starting from a specific past date, you can manually import your past year of Strava rides with just a few taps.
               </p>
             </div>
           </li>
@@ -115,7 +108,7 @@
           <!-- Q4 -->
           <li class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
-              <span>Which platforms does BikeVet support?</span>
+              <span>If I have multiple bikes on Strava, does the app assign mileage to the correct one?</span>
               <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true">
@@ -125,8 +118,107 @@
             </button>
             <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
               <p>
-                BikeVet is currently available on iOS (iPhone and iPad). We're actively exploring an Android version and
-                a companion web dashboard — stay tuned by following us for updates.
+                Yes. You can link each bike in BikeVet to its corresponding profile in your Strava equipment list. Once set up, just select the right bike in Strava when you ride, and the app will sync the data accurately.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q5 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+              <span>Does the app have write permissions for my Strava account, or is it read-only?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+              <p>
+                By default, the app is read-only and does not ask for write permissions. However, you can opt-in to an additional feature that publishes bike milestones (e.g., reaching specific distance goals) directly to your Strava activities.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+        <h2 class="faq-section-title">Maintenance Tracking</h2>
+        <ul class="accordion" role="list" style="margin-bottom: var(--space-2xl);">
+
+          <!-- Q6 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+              <span>Is wear calculated only by distance, or does it include elevation and weather conditions?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+              <p>
+                Our maintenance logic is highly advanced. We factor in weather, elevation, distance, duration, route type, and specific bike/component types. We extract this data mainly from Strava (or manual entries) and cross-reference it with our weather provider for precise wear estimation.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q7 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-7" id="faq-trigger-7">
+              <span>I just replaced a part (e.g., brake pads). How do I reset its counter without resetting the whole bike?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7">
+              <p>
+                BikeVet allows you to log specific maintenance actions to recalculate component status accurately. Simply log a "replacement" action for those brake pads. You can also log visual wear assessments, specific repairs, periodic servicing (like chain lubrication), and cleanings.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+        <h2 class="faq-section-title">Pricing & Privacy</h2>
+        <ul class="accordion" role="list">
+
+          <!-- Q8 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-8" id="faq-trigger-8">
+              <span>Is the app free? What features require a premium subscription?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-8" role="region" aria-labelledby="faq-trigger-8">
+              <p>
+                The app is free for one bike and tracks six core components (e.g., chain, brake pads, tires). The premium version unlocks unlimited bikes, full tracking for every single component (from bottom brackets to freehub bearings), and comprehensive alerts. Both versions provide DIY repair guides, tool/parts recommendations, and tips to improve performance and component lifespan.
+              </p>
+            </div>
+          </li>
+
+          <!-- Q9 -->
+          <li class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-9" id="faq-trigger-9">
+              <span>Do I need to create an account, or is data stored locally on my phone?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+            <div class="accordion__panel" id="faq-panel-9" role="region" aria-labelledby="faq-trigger-9">
+              <p>
+                Account creation is not mandatory; you can use the app anonymously. Bike data is saved on our servers so it can be linked to an account later if you choose to create one. A free account allows you to sync data across devices and recover it if you lose your phone. You can delete your account and all associated data at any time.
               </p>
             </div>
           </li>
