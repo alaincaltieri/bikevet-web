@@ -320,6 +320,17 @@ p {
   aspect-ratio: 9 / 16;
   max-width: 280px;
   margin: 0 auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.feature__image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -333,7 +344,8 @@ p {
     order: unset;
   }
 
-  .feature__visual .placeholder-img {
+  .feature__visual .placeholder-img,
+  .feature__image {
     max-width: 220px;
   }
 }
