@@ -237,10 +237,20 @@ p {
 }
 
 .site-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 1.25rem;
   font-weight: var(--fw-heavy);
   color: var(--color-text);
   letter-spacing: -0.03em;
+}
+
+.site-logo__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: block;
 }
 
 .site-logo:hover {
@@ -396,6 +406,14 @@ p {
 .bottom-cta {
   padding: var(--space-3xl) 0;
   text-align: center;
+}
+
+.bottom-cta__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  margin: 0 auto var(--space-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .bottom-cta h2 {
