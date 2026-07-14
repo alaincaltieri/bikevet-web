@@ -502,12 +502,15 @@ p {
    ========================================================================== */
 .support-hero {
   width: 100%;
+  overflow: hidden;
 }
 
-.support-hero .placeholder-img {
+.support-hero__image {
   width: 100%;
+  height: auto;
   aspect-ratio: 21 / 6;
-  border-radius: 0;
+  object-fit: cover;
+  display: block;
 }
 
 
