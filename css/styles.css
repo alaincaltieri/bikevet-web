@@ -157,6 +157,24 @@ p {
   margin-right: auto;
 }
 
+.section--primary {
+  background: var(--color-accent);
+  color: #FFFFFF;
+}
+
+.section--primary h1,
+.section--primary h2,
+.section--primary h3,
+.section--primary h4 {
+  color: #FFFFFF;
+}
+
+.section--primary p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -462,7 +480,8 @@ p {
   height: 80px;
   border-radius: 18px;
   margin: 0 auto var(--space-sm);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid #FFFFFF;
 }
 
 .bottom-cta h2 {
