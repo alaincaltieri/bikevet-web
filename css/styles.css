@@ -139,6 +139,24 @@ p {
   background: var(--color-bg-alt);
 }
 
+.section--dark {
+  background: #2C2C2C;
+  color: #FFFFFF;
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+  color: #FFFFFF;
+}
+
+.section--dark p {
+  color: #E0E0E0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text-center {
   text-align: center;
 }
