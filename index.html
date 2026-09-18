@@ -13,6 +13,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -63,7 +65,8 @@
         <!-- Feature 1 -->
         <div class="feature-block">
           <div class="feature__text">
-            <h3>Zero-Friction Setup.</h3>
+
+            <h3><i data-lucide="camera"></i> Zero-Friction Setup.</h3>
             <p>
               Forget tedious configurations. Snap a photo of your bike. Our AI instantly identifies your frame and key
               components, creating your digital twin in seconds.
@@ -79,7 +82,7 @@
         <!-- Feature 2 (reversed) -->
         <div class="feature-block feature-block--reversed">
           <div class="feature__text">
-            <h3>Automatic Tracking.</h3>
+            <h3><i data-lucide="bike"></i> Automatic Tracking.</h3>
             <p>
               Connect to Strava once. After every ride, BikeVet analyzes your distance, elevation, terrain, and weather
               in the background. You just ride: we do the math.
@@ -95,7 +98,8 @@
         <!-- Feature 3 -->
         <div class="feature-block">
           <div class="feature__text">
-            <h3>Proactive Alerts.</h3>
+
+            <h3><i data-lucide="bell-dot"></i> Proactive Alerts.</h3>
             <p>
               Receive timely notifications exactly when a part needs attention. Never miss a critical checkup, and keep
               your bike running silently and safely.
@@ -129,6 +133,9 @@
   <div id="footer-placeholder"></div>
 
   <script src="js/components.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>
