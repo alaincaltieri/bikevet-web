@@ -32,4 +32,46 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(error => console.error("Error loading footer:", error));
   }
+  // Waitlist Forms AJAX Submission
+  const waitlistForms = document.querySelectorAll('.waitlist-form');
+  waitlistForms.forEach(form => {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.innerText = 'Sending...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+      
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+        
+        if (response.ok) {
+          form.style.display = 'none';
+          const successMsg = form.parentElement.querySelector('.waitlist-form__success');
+          if (successMsg) successMsg.style.display = 'block';
+        } else {
+          const errorMsg = form.parentElement.querySelector('.waitlist-form__error');
+          if (errorMsg) errorMsg.style.display = 'block';
+        }
+      })
+      .catch(error => {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+        const errorMsg = form.parentElement.querySelector('.waitlist-form__error');
+        if (errorMsg) errorMsg.style.display = 'block';
+        console.error('Form submission error:', error);
+      });
+    });
+  });
 });

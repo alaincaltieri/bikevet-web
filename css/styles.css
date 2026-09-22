@@ -737,3 +737,123 @@ p {
 .legal-content li {
   margin-bottom: var(--space-xs);
 }
+
+/* ==========================================================================
+   Lead Magnet / Waitlist Form
+   ========================================================================== */
+.lead-magnet {
+  margin-top: var(--space-xl);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.lead-magnet__copy {
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-text-muted);
+}
+
+.lead-magnet--dark .lead-magnet__copy {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background: var(--color-bg-alt);
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.lead-magnet--dark .waitlist-form {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.waitlist-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.waitlist-form__email {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.lead-magnet--dark .waitlist-form__email {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text);
+}
+
+.waitlist-form__email:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.waitlist-form__switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+
+.lead-magnet--dark .waitlist-form__switch {
+  color: #FFFFFF;
+}
+
+.waitlist-form__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.waitlist-form__submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.lead-magnet--dark .waitlist-form__submit.btn--outline {
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.lead-magnet--dark .waitlist-form__submit.btn--outline:hover {
+  background: #FFFFFF;
+  color: var(--color-accent);
+}
+
+.waitlist-form__success {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  background: #E8F5E9;
+  color: #2E7D32;
+  border-radius: var(--radius-sm);
+  font-weight: var(--fw-medium);
+  text-align: center;
+}
+
+.waitlist-form__error {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  background: #FFEBEE;
+  color: #C62828;
+  border-radius: var(--radius-sm);
+  font-weight: var(--fw-medium);
+  text-align: center;
+}
