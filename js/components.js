@@ -1,22 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // ---- Language context (helpers provided by js/lang-redirect.js) ----
+  const i18n = window.BikeVetI18n;
+  const pageLang = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
+  // Translated pages use their own language; untranslated pages (terms, privacy)
+  // follow the visitor's preferred language so navigation stays coherent.
+  const uiLang = i18n && !i18n.isTranslatedPage() ? i18n.getPreferredLang() : pageLang;
+  const partialsBase = uiLang === "it" ? "/it/" : "/";
+  const langHome = { en: "/", it: "/it/" };
+
+  // Normalizes paths so "/", "/index.html", "/it", "/it/index", "/support.html"
+  // and "/support" compare correctly.
+  const normalizePath = path => {
+    let p = path.replace(/\.html$/, "").replace(/\/index$/, "/");
+    if (/^\/it$/.test(p)) p = "/it/";
+    return p || "/";
+  };
+
   // Load Header
   const headerPlaceholder = document.getElementById("header-placeholder");
   if (headerPlaceholder) {
-    fetch("header.html")
+    fetch(partialsBase + "header.html")
       .then(response => response.text())
       .then(data => {
         headerPlaceholder.outerHTML = data;
-        
+
         // Set active class for navigation
-        const currentPath = window.location.pathname.split("/").pop() || "index.html";
+        const currentPath = normalizePath(window.location.pathname);
         const navLinks = document.querySelectorAll(".site-nav a");
         navLinks.forEach(link => {
-          const linkHref = link.getAttribute("href");
-          if (linkHref === currentPath || (currentPath === '' && linkHref === 'index.html')) {
-            link.classList.add("active");
+          const linkPath = normalizePath(new URL(link.href, window.location.href).pathname);
+          link.classList.toggle("active", linkPath === currentPath);
+        });
+
+        // Language switcher: point each language to this page's translation
+        // (from hreflang alternates), falling back to that language's home.
+        document.querySelectorAll(".lang-switch a[data-lang]").forEach(link => {
+          const lang = link.dataset.lang;
+          const target = (i18n && i18n.getAlternatePath(lang)) || langHome[lang];
+          if (target) link.setAttribute("href", target);
+
+          if (lang === uiLang) {
+            link.setAttribute("aria-current", "true");
           } else {
-            link.classList.remove("active");
+            link.removeAttribute("aria-current");
           }
+
+          // Persist the explicit choice so auto-redirect respects it from now on.
+          link.addEventListener("click", () => {
+            if (i18n) i18n.setStoredLang(lang);
+          });
         });
       })
       .catch(error => console.error("Error loading header:", error));
@@ -25,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load Footer
   const footerPlaceholder = document.getElementById("footer-placeholder");
   if (footerPlaceholder) {
-    fetch("footer.html")
+    fetch(partialsBase + "footer.html")
       .then(response => response.text())
       .then(data => {
         footerPlaceholder.outerHTML = data;
@@ -40,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerText;
-      submitBtn.innerText = 'Sending...';
+      submitBtn.innerText = submitBtn.dataset.sendingLabel || 'Sending...';
       submitBtn.disabled = true;
 
       const formData = new FormData(form);

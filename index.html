@@ -7,12 +7,18 @@
   <title>BikeVet – Your Bicycle's Digital Twin</title>
   <meta name="description"
     content="BikeVet helps you keep your bicycle in perfect shape with a digital twin that tracks every component, service interval, and ride.">
+  <link rel="canonical" href="https://bikevet.app/">
+  <link rel="alternate" hreflang="en" href="https://bikevet.app/">
+  <link rel="alternate" hreflang="it" href="https://bikevet.app/it/">
+  <link rel="alternate" hreflang="x-default" href="https://bikevet.app/">
+  <!-- Language auto-redirect: must stay after the hreflang links -->
+  <script src="/js/lang-redirect.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/media/favicon.ico" type="image/x-icon">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -34,12 +40,12 @@
             data, weather, and terrain. Stop relying on memory, gut feeling or tedious Excel sheets.
           </p>
           <a href="https://apps.apple.com/us/app/id6759969501" class="download-badge" id="cta-hero-download">
-            <img src="media/download-black.svg" alt="Download on the App Store">
+            <img src="/media/download-black.svg" alt="Download on the App Store">
           </a>
         </div>
 
         <div class="hero__image-wrapper">
-          <img src="media/hero.jpg" alt="BikeVet Digital Twin screenshot" class="hero__image">
+          <img src="/media/hero.jpg" alt="BikeVet Digital Twin screenshot" class="hero__image">
         </div>
       </div>
     </section>
@@ -73,7 +79,7 @@
             </p>
           </div>
           <div class="feature__visual">
-            <img src="media/feature_setup.jpg" alt="App screenshot showing setup" class="feature__image">
+            <img src="/media/feature_setup.jpg" alt="App screenshot showing setup" class="feature__image">
           </div>
         </div>
 
@@ -89,7 +95,7 @@
             </p>
           </div>
           <div class="feature__visual">
-            <img src="media/feature_strava.jpg" alt="App screenshot showing Strava sync" class="feature__image">
+            <img src="/media/feature_strava.jpg" alt="App screenshot showing Strava sync" class="feature__image">
           </div>
         </div>
 
@@ -106,7 +112,7 @@
             </p>
           </div>
           <div class="feature__visual">
-            <img src="media/feature_alerts.jpg" alt="App screenshot showing maintenance alerts" class="feature__image">
+            <img src="/media/feature_alerts.jpg" alt="App screenshot showing maintenance alerts" class="feature__image">
           </div>
         </div>
       </div>
@@ -115,13 +121,13 @@
     <!-- ========== BOTTOM CTA ========== -->
     <section class="bottom-cta section section--primary" id="download">
       <div class="container">
-        <img src="media/icon.png" alt="BikeVet Icon" class="bottom-cta__icon">
+        <img src="/media/icon.png" alt="BikeVet Icon" class="bottom-cta__icon">
         <h2>Become your own mechanic.</h2>
         <p>BikeVet doesn't just tell you when to fix something, it explains why and how to do it yourself. Build
           your mechanical expertise, reduce unnecessary bike shop visits, and protect your bike's resale value with
           a perfect digital service history.</p>
         <a href="https://apps.apple.com/us/app/id6759969501" class="download-badge" id="cta-bottom-download">
-          <img src="media/download-white.svg" alt="Download on the App Store">
+          <img src="/media/download-white.svg" alt="Download on the App Store">
         </a>
 
         <div class="lead-magnet lead-magnet--dark">
@@ -141,7 +147,7 @@
               </div> -->
             </div>
 
-            <button type="submit" class="waitlist-form__submit btn btn--outline">Notify Me</button>
+            <button type="submit" class="waitlist-form__submit btn btn--outline" data-sending-label="Sending...">Notify Me</button>
           </form>
           <div class="waitlist-form__success" style="display: none;">
             Thanks! We'll be in touch when your platform is ready.
@@ -159,7 +165,7 @@
   <!-- ========== FOOTER ========== -->
   <div id="footer-placeholder"></div>
 
-  <script src="js/components.js"></script>
+  <script src="/js/components.js"></script>
   <script>
     lucide.createIcons();
   </script>

@@ -323,6 +323,72 @@ p {
   color: var(--color-accent);
 }
 
+.site-header__end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* ---- Language Switcher (IT | EN) ---- */
+.lang-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+.lang-switch a {
+  position: relative;
+  display: block;
+  min-width: 2.25rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-text-muted);
+  border-radius: 999px;
+  transition: color 0.2s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Thin divider between the two options, hidden next to the active pill */
+.lang-switch a + a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: var(--color-border);
+  transition: opacity 0.2s ease;
+}
+
+.lang-switch a[aria-current="true"]::before,
+.lang-switch a[aria-current="true"] + a::before {
+  opacity: 0;
+}
+
+.lang-switch a:hover,
+.lang-switch a:focus-visible {
+  color: var(--color-text);
+}
+
+.lang-switch a[aria-current="true"] {
+  color: var(--color-accent);
+  background: var(--color-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  cursor: default;
+}
+
+.lang-switch a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 
 /* ==========================================================================
    Hero Section (Landing)
@@ -694,6 +760,16 @@ p {
   .btn {
     padding: 0.75rem 1.5rem;
     font-size: 0.9375rem;
+  }
+
+  .site-header__end,
+  .site-nav {
+    gap: var(--space-sm);
+  }
+
+  .lang-switch a {
+    min-width: 2rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 
