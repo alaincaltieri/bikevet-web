@@ -424,6 +424,55 @@ p {
 
 
 /* ==========================================================================
+   Trust / Social Proof Section (Landing)
+   ========================================================================== */
+.trust-bar {
+  padding: var(--space-xl) 0;
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.trust-bar__label {
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 auto var(--space-xs);
+}
+
+.trust-bar__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.trust-bar__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trust-bar__link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.trust-bar__badge {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+
+/* ==========================================================================
    Features Section (Landing)
    ========================================================================== */
 .features {
