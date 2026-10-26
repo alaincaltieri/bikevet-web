@@ -353,12 +353,16 @@ p {
   outline-offset: 2px;
 }
 
+.mobile-menu-toggle .close-icon {
+  display: none;
+}
+
 .mobile-menu-toggle[aria-expanded="true"] .hamburger-icon {
   display: none;
 }
 
 .mobile-menu-toggle[aria-expanded="true"] .close-icon {
-  display: block !important;
+  display: block;
 }
 
 .mobile-nav {
