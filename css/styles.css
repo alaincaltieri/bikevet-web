@@ -157,6 +157,26 @@ p {
   margin-right: auto;
 }
 
+/* ---- Problem Statement Simulator Teaser ---- */
+.problem-teaser {
+  margin-top: var(--space-md);
+  font-size: 1.0625rem;
+  color: #E0E0E0;
+}
+
+.problem-teaser__link {
+  color: #FFFFFF;
+  font-weight: var(--fw-medium);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.problem-teaser__link:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
 .section--primary {
   background: var(--color-accent);
   color: #FFFFFF;
