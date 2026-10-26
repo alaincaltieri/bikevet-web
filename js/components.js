@@ -24,13 +24,30 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         headerPlaceholder.outerHTML = data;
 
-        // Set active class for navigation
+        // Set active class for navigation (desktop & mobile)
         const currentPath = normalizePath(window.location.pathname);
-        const navLinks = document.querySelectorAll(".site-nav a");
+        const navLinks = document.querySelectorAll(".site-nav a, .mobile-nav a");
         navLinks.forEach(link => {
           const linkPath = normalizePath(new URL(link.href, window.location.href).pathname);
           link.classList.toggle("active", linkPath === currentPath);
         });
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector(".mobile-menu-toggle");
+        const mobileNav = document.getElementById("mobile-nav");
+        if (menuBtn && mobileNav) {
+          menuBtn.addEventListener("click", () => {
+            const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+            menuBtn.setAttribute("aria-expanded", !isExpanded);
+            mobileNav.classList.toggle("is-open", !isExpanded);
+          });
+          mobileNav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+              menuBtn.setAttribute("aria-expanded", "false");
+              mobileNav.classList.remove("is-open");
+            });
+          });
+        }
 
         // Language switcher: point each language to this page's translation
         // (from hreflang alternates), falling back to that language's home.

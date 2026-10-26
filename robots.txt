@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bikevet.app/sitemap.xml
+Sitemap: https://bikevet.app/cost-of-neglect/sitemap-index.xml
